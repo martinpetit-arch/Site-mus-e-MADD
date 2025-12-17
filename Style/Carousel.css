@@ -1,0 +1,41 @@
+.expo-slider {
+  width: 100%;
+}
+
+.slider-track {
+  display: flex;
+  gap: 1.5rem;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  padding: 2rem 0;
+}
+
+.slide {
+  flex: 0 0 60%;
+  height: 280px;
+  object-fit: cover;
+  scroll-snap-align: center;
+  opacity: 0.4;
+  transition: opacity 0.2s;
+}
+
+/* image centrale visible */
+.slide:focus {
+  opacity: 1;
+}
+
+/* navigation */
+.slider-nav {
+  margin-top: 1.5rem;
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  align-items: center;
+}
+
+.arrow {
+  font-size: 1.5rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+}

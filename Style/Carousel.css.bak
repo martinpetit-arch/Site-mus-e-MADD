@@ -1,0 +1,39 @@
+/* Backup of Carousel.css */
+.slider-track {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  gap: 1.5rem;
+  align-items: center;
+}
+
+.slide {
+  width: 100%;
+  height: 280px;
+  object-fit: cover;
+  opacity: 0.4;
+}
+
+.slide.active {
+  height: 420px;
+  opacity: 1;
+}
+
+/* navigation */
+.slider-nav {
+  margin-top: 1.5rem;
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  align-items: center;
+}
+
+.arrow {
+  font-size: 1.5rem;
+  cursor: pointer;
+  background: none;
+  border: none;
+  align: center;
+}
+.arrow:disabled {
+  opacity: 0.3;
+  cursor: default;
+}
