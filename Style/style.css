@@ -59,7 +59,7 @@ main {
 
 .image-alt{
   padding-left: 200px;
-  width: 500px;
+  width: 600px;
 }
 
 .oeuvre_coup_de_coeur .coup_de_coeur {
@@ -123,7 +123,9 @@ main {
 footer {
   display: flex;
   justify-content: center;
-  gap: 400px;
+  gap: 100px;
+  padding-left: 50px;
+  padding-right: 50px;
   padding-bottom: 30px;
   padding-top: 130px;
   font-size: 20px;
@@ -137,7 +139,6 @@ footer ol {
 
 .info-footer{
   gap: 20px;
-  text-align: center;
   padding-left: 100px;
 }
 
@@ -185,8 +186,8 @@ footer ol {
 
   .musée{
     flex-direction: column;
-    gap: 10px;
-    padding-left: 1rem;
+    gap: 5px;
+    padding-right: 300px;
   }
 
   .oeuvre_coup_de_coeur .coup_de_coeur {
@@ -219,12 +220,12 @@ footer ol {
   .info-footer{
     flex-direction: column;
     gap:10px;
-    padding-left: 0px;
+    padding-left: 20px;
   }
 
   footer{
     flex-direction: column;
-    gap: 10px;
+    gap: 0px;
     padding-left: 20px;
     width: 350px;
   }
@@ -235,7 +236,7 @@ footer ol {
     padding-left: 0px;
     width: 350px;
     padding-top: 20px;
-    padding-right: 1rem;
+    padding-right: 20px;
   }
 
   .btn-alt{

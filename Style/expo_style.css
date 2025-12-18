@@ -69,7 +69,11 @@ nav a, nav a:visited, nav a:hover, nav a:active {
 }
 
 
-
+body {
+  font-family: "Fibra light", sans-serif;
+  padding-left: 50px;
+  padding-right: 50px;
+}
 
 
 
@@ -85,9 +89,6 @@ nav a, nav a:visited, nav a:hover, nav a:active {
 
 
 .quote{
-   padding-right: 200px;
-  padding-left: 200px;
-  
   
 }
 
