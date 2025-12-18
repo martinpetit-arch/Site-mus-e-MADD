@@ -28,7 +28,7 @@
   font-weight: bold;
 }
 
-/* 📱 Version mobile : carousel horizontal */
+/* Version mobile : carousel horizontal */
 @media (max-width: 767px) {
   .slider-track {
     overflow-x: auto;
@@ -42,7 +42,7 @@
   }
 }
 
-/* 💻 Version PC : grille fixe */
+/*Version PC : grille fixe */
 @media (min-width: 768px) {
   .slider-track {
     justify-content: center;
