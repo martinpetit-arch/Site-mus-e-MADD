@@ -82,6 +82,8 @@ main {
   flex-direction: column;
   flex: 1;
   gap: 10px;
+  padding-top: 100px;
+  padding-left: 50px;
 }
 
 
@@ -197,6 +199,5 @@ footer ol {
   .musée{
     flex-direction: column;
     gap: 10px;
-  }
   }
 }
