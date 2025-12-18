@@ -53,7 +53,13 @@ main {
 
 /*fleche*/
 
+.reouverture-content{
+  display: flex;
+}
 
+.image{
+  padding-left: 200px;
+}
 
 .oeuvre_coup_de_coeur .coup_de_coeur {
   display: flex;
@@ -63,7 +69,7 @@ main {
 
 /* Image */
 .oeuvre_coup_de_coeur img {
-  width: 100%;
+  width: 500px;
   max-width: 45%;
   height: 15cm;
   object-fit: contain;
@@ -84,7 +90,6 @@ main {
   font-size: 1.2rem;
 }
 
-
 .oeuvre_coup_de_coeur p {
   margin: 20px 0 0 0;
   font-size: 0.95rem;
@@ -92,13 +97,10 @@ main {
   max-width: 300px;
 }
 
-
-
-
-
-
-
-
+.voir-plus {
+  text-decoration: underline;
+  
+}
 
 
 
@@ -148,7 +150,7 @@ footer {
   justify-content: center;
   gap: 400px;
   padding-bottom: 30px;
-  padding-top: 50px;
+  padding-top: 130px;
   font-size: 20px;
 }
 footer ol {
@@ -159,7 +161,7 @@ footer ol {
 }
 
 .info-footer{
-  gap: 35px;
+  gap: 50px;
   text-align: center;
 }
 
@@ -169,6 +171,12 @@ footer ol {
   grid-template-columns: repeat(2,1fr);
   text-align: center;
   text-decoration: underline;
+}
+
+.image-reseau {
+  width: 70px;
+  position: relative;
+  top: -20px;
 }
 
 /*footer*/

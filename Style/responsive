@@ -1,0 +1,6 @@
+/* @media screen and (max-widht: 1080px){
+
+.reouverture-content{
+    flex-direction: column;
+}
+} */

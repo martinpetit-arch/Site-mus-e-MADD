@@ -13,7 +13,7 @@
 
 .slide {
   flex: 0 0 60%;
-  height: 280px;
+  /*height: 280px;*/
   object-fit: cover;
   scroll-snap-align: center;
   opacity: 0.4;
