@@ -14,6 +14,18 @@ header {
   background-color: white;
 }
 
+.expo-item a {
+  display: block;        /* Lien = bloc */
+}
+
+.expo-item a img {
+  display: block;        /* Supprime espaces parasites */
+}
+
+.logo-link {
+  display: inline-block;
+}
+
 .madd-logo {
   height: 40px;
   width: auto;
@@ -154,6 +166,13 @@ footer ol {
   gap: 10px;
 }
 
+footer ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
 .info-footer{
   gap: 20px;
   padding-left: 100px;
@@ -177,8 +196,16 @@ footer ol {
 /*footer*/
 
 
-@media screen and (max-width: 1080px) {
+@media screen and (max-width: 677px) {
 
+  .body{
+    padding-left: 50px;
+  }
+  .reouverture{
+    padding-left: 20px;
+  }
+  
+  
   .reouverture-content{
     flex-direction: column;
     gap: 10px;
@@ -207,13 +234,18 @@ footer ol {
     padding-right: 300px;
   }
 
+    .oeuvre_coup_de_coeur h2, .oeuvre_coup_de_coeur img {
+      padding-left: 200Spx;
+
+  }
+
   .oeuvre_coup_de_coeur .coup_de_coeur {
     flex-direction: column;
   }
 
   .texte{
     padding-top: 0;
-    text-align: center;
+    text-align: left;
     padding-left: 10px;
     width: 300px;
   }
@@ -251,7 +283,7 @@ footer ol {
     flex-direction: column;
     gap: 30px;
     padding-top: 60px;
-    padding-left: 10px;
+    padding-left: 20px;
     font-size: 16px;
   }
 
@@ -280,6 +312,14 @@ footer ol {
 
   .quotes{
     padding-left: 0px;
+  }
+
+  .histoire{
+    padding-left: 20px;
+  }
+
+  .nos-collections{
+    padding-left: 20px;
   }
   
 

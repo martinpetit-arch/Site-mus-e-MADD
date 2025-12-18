@@ -11,8 +11,8 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 1rem 2rem;
   background-color: white;
+  padding-top: 10px;
 }
 
 .madd-logo {
@@ -142,25 +142,14 @@ footer ol {
 /*footer*/
 
 
- @media screen and (max-width: 375px) {
+ @media screen and (max-width: 677px) {
 
   body {
     padding-left: 12px;
     padding-right: 12px;
   }
 
-  /* HEADER */
-  header {
-    flex-direction: column;
-    align-items: center;
-    gap: 12px;
-  }
-
-  nav ul {
-    flex-direction: column;
-    gap: 10px;
-  }
-
+  
   .btn-alt {
     position: static;
     margin-top: 10px;

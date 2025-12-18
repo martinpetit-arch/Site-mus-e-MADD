@@ -1,0 +1,136 @@
+/* ===== MENU PRINCIPAL ===== */
+header {
+  position: relative; /* Permet de placer des éléments en absolu à l’intérieur du nav (ex: bouton hamburger) */
+}
+
+header nav ul {
+  list-style: none;   /* Supprime les puces de la liste */
+  display: flex;      /* Affiche les éléments horizontalement (ligne) */
+  gap: 1.5rem;        /* Espacement entre les items */
+  margin: 0;          /* Supprime la marge par défaut */
+  padding: 0;         /* Supprime le padding par défaut */
+}
+
+header nav ul li {
+  position: relative; /* Nécessaire pour que le sous-menu puisse être positionné en absolu par rapport au parent */
+}
+
+header nav ul a {
+  text-decoration: none; /* Supprime le soulignement des liens */
+  color: #000;           /* Texte noir */
+  font-weight: 500;      /* Texte un peu plus épais */
+  padding: 0.5rem 0.8rem;/* Espacement interne autour du texte */
+  transition: all 0.3s ease; /* Animation fluide sur hover */
+}
+
+header nav ul a:hover {
+  color: orange;         /* Texte orange au survol */
+  background: #000;      /* Fond noir au survol */
+  border-radius: 4px;    /* Coins arrondis */
+}
+
+/* ===== SOUS-MENU ===== */
+header nav ul li ul {
+  display: none;         /* Caché par défaut */
+  position: absolute;    /* Placé en absolu sous l’élément parent */
+  top: 100%;             /* Juste en dessous du parent */
+  left: 0;               /* Aligné à gauche */
+  background: #fff;      /* Fond blanc */
+  border: 1px solid #000;/* Bordure noire */
+  list-style: none;      /* Pas de puces */
+  padding: 0;            /* Pas de padding */
+  margin: 0;             /* Pas de marge */
+  min-width: 160px;      /* Largeur minimale du sous-menu */
+  z-index: 1000;         /* Passe au-dessus des autres éléments */
+}
+
+header nav ul li ul li a {
+  display: block;        /* Chaque lien prend toute la largeur */
+  padding: 0.6rem;       /* Espacement interne */
+  color: #000;           /* Texte noir */
+}
+
+header nav ul li ul li a:hover {
+  background: orange;    /* Fond orange au survol */
+  color: #fff;           /* Texte blanc au survol */
+}
+
+header nav ul li:hover ul {
+  display: block;        /* Affiche le sous-menu quand on survole le parent */
+}
+
+/* ===== BOUTON HAMBURGER ===== */
+header nav .toggle {
+  display: none;         /* Caché en version desktop */
+  font-size: 2rem;       /* Taille de l’icône hamburger */
+  cursor: pointer;       /* Curseur main */
+  color: orange;         /* Icône orange */
+}
+
+/* ===== RESPONSIVE ===== */
+@media screen and (max-width: 1080px) {
+  header nav ul {
+    display: none;       /* Caché par défaut en mobile */
+    flex-direction: column; /* Menu vertical */
+    justify-content: center;   /* Centre verticalement les liens */
+    align-items: center;       /* Centre horizontalement les liens */
+    background: #ffffff;       /* Fond blanc */
+    position: fixed;           /* Fixé sur toute la page */
+    top: 0;                    /* Commence en haut */
+    left: 0;                   /* Collé à gauche */
+    height: 100vh;             /* Prend toute la hauteur de l’écran */
+    width: 100vw;              /* Prend toute la largeur de l’écran */
+    margin: 0;                 /* Supprime marges */
+    padding: 0;                /* Supprime padding */
+    z-index: 1500;             /* Passe au-dessus du contenu */
+  }
+
+  header nav ul.active {
+    display: flex;             /* Affiche le menu quand on ajoute la classe active via JS */
+  }
+
+  header nav ul li {
+    width: 100%;               /* Chaque item prend toute la largeur */
+    text-align: center;        /* Texte centré */
+  }
+
+  header nav ul li a {
+    color: #fff;               /* Liens blancs */
+    padding: 1.5rem;           /* Espacement interne plus grand */
+    display: block;            /* Chaque lien prend toute la largeur */
+    font-size: 1.2rem;         /* Taille du texte plus grande */
+  }
+
+  header nav ul li a:hover {
+    background: rgb(255, 255, 255); /* Fond blanc au survol */
+    color: #000000;                 /* Texte noir au survol */
+  }
+
+  /* Bouton hamburger abaissé */
+  header nav .toggle {
+    position: relative;   /* OBLIGATOIRE */
+    display: block;          /* Visible en mobile */
+    right: 1rem;             /* Aligné à droite */
+    color: orange;           /* Icône orange */
+    font-size: 2rem;         /* Taille icône */
+    cursor: pointer;         /* Curseur main */
+    z-index: 3000;           /* Passe au-dessus du menu */
+  }
+
+  /* Sous-menu en mobile */
+  header nav ul li ul {
+    position: static;        /* Intégré dans le flux (pas en absolu) */
+    background: #ffffff;     /* Fond blanc */
+    border: none;            /* Pas de bordure */
+    width: 100%;             /* Prend toute la largeur */
+  }
+
+  header nav ul li ul li a {
+    color: #fff;             /* Liens blancs */
+  }
+
+  header nav ul li ul li a:hover {
+    background: orange;      /* Fond orange au survol */
+    color: #000;             /* Texte noir au survol */
+  }
+}
