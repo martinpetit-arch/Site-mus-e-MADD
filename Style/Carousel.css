@@ -2,40 +2,54 @@
   width: 100%;
 }
 
+/* Style commun */
 .slider-track {
   display: flex;
   gap: 1.5rem;
-  overflow-x: auto;
-  scroll-snap-type: x mandatory;
   scroll-behavior: smooth;
   padding: 2rem 0;
 }
 
 .slide {
-  flex: 0 0 60%;
-  /*height: 280px;*/
   object-fit: cover;
-  scroll-snap-align: center;
-  opacity: 0.4;
-  transition: opacity 0.2s;
+  opacity: 0.8;
+  transition: opacity 0.3s;
+  border-radius: 8px;
 }
 
-/* image centrale visible */
-.slide:focus {
+.slide:hover {
   opacity: 1;
 }
 
-/* navigation */
+/* Navigation */
 .slider-nav {
-  margin-top: 1.5rem;
-  display: grid;
-  grid-template-columns: auto 1fr auto;
-  align-items: center;
+  margin-top: 1rem;
+  text-align: center;
+  font-weight: bold;
 }
 
-.arrow {
-  font-size: 1.5rem;
-  background: none;
-  border: none;
-  cursor: pointer;
+/* 📱 Version mobile : carousel horizontal */
+@media (max-width: 767px) {
+  .slider-track {
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .slide {
+    flex: 0 0 80%; /* largeur de chaque image */
+    scroll-snap-align: center;
+  }
+}
+
+/* 💻 Version PC : grille fixe */
+@media (min-width: 768px) {
+  .slider-track {
+    justify-content: center;
+    overflow: hidden; /* pas de scroll horizontal */
+  }
+
+  .slide {
+    flex: 0 0 30%; /* 3 images côte à côte */
+  }
 }
