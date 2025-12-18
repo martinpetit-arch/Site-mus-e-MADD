@@ -1,7 +1,3 @@
-.expo-slider {
-  width: 100%;
-}
-
 /* Style commun */
 .slider-track {
   display: flex;
@@ -10,46 +6,70 @@
   padding: 2rem 0;
 }
 
-.slide {
-  object-fit: cover;
-  opacity: 0.8;
-  transition: opacity 0.3s;
+/* Bloc image + titre */
+.expo-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 0 0 30%;
+  cursor: pointer;
+}
+
+/* Conteneur image avec overflow hidden */
+.img-wrapper {
+  width: 100%;
+  overflow: hidden; /* empêche l'image de dépasser */
   border-radius: 8px;
 }
 
-.slide:hover {
-  opacity: 1;
+.img-wrapper img {
+  width: 100%;
+  height: auto;
+  transition: transform 0.4s ease; /* animation fluide */
 }
 
-/* Navigation */
-.slider-nav {
-  margin-top: 1rem;
-  text-align: center;
+/* Effet au survol */
+.expo-item:hover .img-wrapper img {
+  transform: scale(1.2); /* zoom dans l'image */
+}
+
+.expo-item figcaption {
+  margin-top: 0.5rem;
+  font-size: 1rem;
   font-weight: bold;
+  text-align: center;
+  color: #555;
+  transition: color 0.3s ease;
 }
 
-/* Version mobile : carousel horizontal */
-@media (max-width: 767px) {
+.expo-item:hover figcaption {
+  color: #d62828; /* texte change de couleur */
+}
+
+/* Mobile/tablette */
+@media screen and (max-width: 1080px) {
   .slider-track {
     overflow-x: auto;
     scroll-snap-type: x mandatory;
     -webkit-overflow-scrolling: touch;
+    padding: 1rem 0;
   }
 
-  .slide {
-    flex: 0 0 80%; /* largeur de chaque image */
+  .expo-item {
+    flex: 0 0 80%;
     scroll-snap-align: center;
   }
 }
 
-/*Version PC : grille fixe */
-@media (min-width: 768px) {
+/* PC */
+@media screen and (min-width: 1081px) {
   .slider-track {
     justify-content: center;
-    overflow: hidden; /* pas de scroll horizontal */
+    overflow: hidden;
   }
 
-  .slide {
-    flex: 0 0 30%; /* 3 images côte à côte */
+  .expo-item {
+    flex: 0 0 30%;
+    max-width: 400px;
   }
 }

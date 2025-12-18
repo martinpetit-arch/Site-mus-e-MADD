@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="Style/typography.css">
     <link rel="stylesheet" href="Style/style.css">
     <link rel="stylesheet" href="Style/Carousel.css">
+    <link rel="stylesheet" href="Style/menu.css">
     <script src="Script/carousel.js" defer></script>
   </head>
 
@@ -34,26 +35,36 @@
   <title>Expo Slider Responsive</title>
   <link rel="stylesheet" href="style.css">
 </head>
-<body>
-  <section class="expo-slider">
-    <div class="slider-track">
-      <img src="Images/Femme dos.jpg" alt="Femme" class="slide">
-      <img src="Images/homme qui se cache.jpg" alt="Homme" class="slide">
-      <img src="Images/salon art.jpg" alt="Salon" class="slide">
-    </div>
-
-    <div class="slider-nav">
-      <p class="slider-title body">Détenues de Bettina Rheims</p>
-    </div>
-  </section>
-</body>
 </html>
 
 
 <!-- carousel-->
-  
+<main>
+  <!-- Expo 1 -->
+  <section class="expo-slider">
+    <div class="slider-track">
+      <figure class="expo-item">
+        <div class="img-wrapper">
+          <img src="Images/Femme dos.jpg" alt="Femme">
+        </div>
+        <figcaption>Expo Femme dos</figcaption>
+      </figure>
 
+      <figure class="expo-item">
+        <div class="img-wrapper">
+          <img src="Images/homme qui se cache.jpg" alt="Homme">
+        </div>
+        <figcaption>Expo Homme qui se cache</figcaption>
+      </figure>
 
+      <figure class="expo-item">
+        <div class="img-wrapper">
+          <img src="Images/salon art.jpg" alt="Salon">
+        </div>
+        <figcaption>Expo Salon d’art</figcaption>
+      </figure>
+    </div>
+  </section>
 
 <section class="reouverture">
     <h2 class="titre">Réouverture du musée</h2>
@@ -84,26 +95,48 @@
     </div>
   </section>
 
-  <section class="Nos Collections">
+  <!-- Expo 2 -->
+  <section class="nos-collections">
     <h2 class="titre">Nos Collections</h2>
-    <H3>Les collections du madd-bordeaux réunissent près de 33 000 œuvres, du Moyen Âge à nos jours.</H3>
-    <p class="body">Elles témoignent de la production d'arts décoratifs et de design en Occident, illustrant des typologies aussi diverses que les arts de la table, le mobilier, les armes, les instruments de musique et incluant également les nouveaux usages. Par leur éclectisme et leur richesse, les collections du musée mettent en valeur et contribuent à la connaissance des savoir-faire traditionnels comme des technologies les plus récentes. Elles comptent aussi un fonds important de peintures, de sculptures et d'arts graphiques, en lien notamment avec l'histoire de Bordeaux et la vie des dernières familles royales françaises.</p>
+    <h3 class="texte">Les collections du madd-bordeaux réunissent près de 33 000 œuvres, du Moyen Âge à nos jours.</h3>
+    <p class="texte">
+      Elles témoignent de la production d'arts décoratifs et de design en Occident, 
+      illustrant des typologies aussi diverses que les arts de la table, le mobilier, les armes, 
+      les instruments de musique et incluant également les nouveaux usages. Par leur éclectisme et leur richesse, 
+      les collections du musée mettent en valeur et contribuent à la connaissance des savoir-faire 
+      traditionnels comme des technologies les plus récentes. Elles comptent aussi un fonds important de peintures, 
+      de sculptures et d'arts graphiques, en lien notamment avec l'histoire de Bordeaux et la vie des dernières familles royales françaises.
+    </p>
+
     <div class="slider-track">
-      <img src="Images/Vases.jpg" alt="T/V">
-      <img src="Images/Chambre jonquille.jpg" alt="verre">
-      <img src="Images/Jeanvrot.jpg" alt="musee">
-    </div>
-    <div class="slider-nav">
-      <span class="arrow">←</span>
-      <p class="slider-title body">COLLECTION DES XVIIe et XVIIIe siècles</p>
-      <span class="arrow">→</span>
+      <figure class="expo-item">
+        <div class="img-wrapper">
+          <img src="Images/Vases.jpg" alt="Vases">
+        </div>
+        <figcaption>Collection des Vases</figcaption>
+      </figure>
+
+      <figure class="expo-item">
+        <div class="img-wrapper">
+          <img src="Images/Chambre jonquille.jpg" alt="Chambre">
+        </div>
+        <figcaption>Collection Chambre Jonquille</figcaption>
+      </figure>
+
+      <figure class="expo-item">
+        <div class="img-wrapper">
+          <img src="Images/Jeanvrot.jpg" alt="Jeanvrot">
+        </div>
+        <figcaption>Collection Jeanvrot</figcaption>
+      </figure>
     </div>
   </section>
+</main>
 
 <section class="histoire">
     <h2 class="titre">Histoire du musée</h2>
     <div class="musée">
-      <img class="image-alt" src="Images/musée.jpg" alt="Photo du musée">
+      <img class="image" src="Images/musée.jpg" alt="Photo du musée">
       <div class="texte">
       <p class="body">
         L'hôtel de Lalande fut édifié à la fin de l'Ancien régime pour une riche famille de parlementaires bordelais. 

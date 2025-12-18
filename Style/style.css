@@ -57,11 +57,8 @@ main {
   display: flex;
 }
 
-.image{
+.image-alt{
   padding-left: 200px;
-}
-
-.image-construction{
   width: 500px;
 }
 
@@ -109,9 +106,8 @@ main {
   align-items: flex-start;
 }
 
-.histoire .musée img {
+.image{
   width: 800px;
-  max-width: 45%;
   height: auto;
   object-fit: contain;
   display: block;
@@ -177,10 +173,20 @@ footer ol {
     padding-top: 30px;
   }
 
+  .nos-collections{
+    margin-top: 3rem;
+    gap: 0px;
+  }
+
+  .histoire{
+    position: relative;
+    top: -5rem;
+  }
+
   .musée{
     flex-direction: column;
     gap: 10px;
-
+    padding-left: 1rem;
   }
 
   .oeuvre_coup_de_coeur .coup_de_coeur {
@@ -190,32 +196,49 @@ footer ol {
   .texte{
     padding-top: 0;
     text-align: center;
-    padding-left: 2rem;
+    padding-left: 1rem;
     width: 300px;
   }
 
   .titre{
-    padding-left: 3.5rem;
-    width: 1000px;
+    padding-left: 0rem;
+    width: 320px;
+    text-align: center;
   }
 
   .image-alt{
-    padding-left: 2.5rem;
+    padding-left: 1rem;
     width: 300px;
   }
 
-    .image{
-    padding-left: 1rem;
+  .image{
+    padding-left: 2.5rem;
     width: 300px;
   }
 
   .info-footer{
     flex-direction: column;
     gap:10px;
+    padding-left: 0px;
   }
 
-  .footer{
+  footer{
     flex-direction: column;
     gap: 10px;
+    padding-left: 20px;
+    width: 350px;
+  }
+
+  .info2-footer{
+    flex-direction: column;
+    gap: 10px;
+    padding-left: 0px;
+    width: 350px;
+    padding-top: 20px;
+    padding-right: 1rem;
+  }
+
+  .btn-alt{
+    margin-top: 3rem;
   }
 }

@@ -2,7 +2,9 @@
 *{ 
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+  box-sizing: content-box;
+  font-family:"Fibra light";
+  
 }
 
 header {
@@ -47,6 +49,66 @@ nav a, nav a:visited, nav a:hover, nav a:active {
   right: 30px;
 }
 /*header*/
+
+
+.MuséeVivant {
+  text-align: center;
+  padding-top: 50px;
+  padding-bottom: 20px;
+  margin-right: 100px;
+}
+
+.MuséeVivant img {
+  margin-top: 20px;
+  margin-left: 70px;
+}
+
+
+.MuséeVivant h1 {
+  margin-left: 70px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.quote{
+   padding-right: 200px;
+  padding-left: 200px;
+  
+  
+}
+
+.texte-expo{
+  text-align: center;
+  padding-right: 200px;
+  padding-left: 200px;
+  
+}
+
+
+
+
+
+
+
+
+
+
+
+
 
 footer {
   display: flex;
