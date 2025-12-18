@@ -24,6 +24,11 @@ h3 {
   font-size: 18px;
 }
 
+.body-alt{
+  font-size: 18px;
+  margin-right: 150px;
+}
+
 body{
   font-family:"fibra light";
 }
@@ -53,6 +58,13 @@ h3 {
 .body {
   font-size: 16px;
   text-align: center;
+}
+
+.body-alt{
+  padding-top: 20px;
+  font-size: 16px;
+  padding-left: 20px;
+  width: 290px;
 }
 
 .quotes {

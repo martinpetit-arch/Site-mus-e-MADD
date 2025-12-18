@@ -2,7 +2,7 @@
 *{ 
   margin: 0;
   padding: 0;
-  box-sizing: content-box;
+  box-sizing: border-box;
   font-family:"Fibra light";
   
 }
@@ -59,8 +59,8 @@ nav a, nav a:visited, nav a:hover, nav a:active {
 }
 
 .MuséeVivant img {
-  margin-top: 20px;
-  margin-left: 70px;
+  margin-left: 100px;
+  gap: 20px;
 }
 
 
@@ -70,38 +70,32 @@ nav a, nav a:visited, nav a:hover, nav a:active {
 
 
 body {
-  font-family: "Fibra light", sans-serif;
+  font-family: "Fibra light";
   padding-left: 50px;
   padding-right: 50px;
 }
 
+.Image{
+  display: flex;
+  justify-content: center;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  padding-left: 10px;
+  padding-right: 10px;
+  gap: 20px;
+  height:600px;  
+}  
 
 
 
 
-
-
-
-
-
-
-
-
-
-.quote{
-  
-}
 
 .texte-expo{
-  text-align: center;
-  padding-right: 200px;
-  padding-left: 200px;
+  text-align: left;
+  padding-right: 0px;
+  padding-left: 0px;
   
 }
-
-
-
-
 
 
 
@@ -148,33 +142,94 @@ footer ol {
 /*footer*/
 
 
-@media screen and (max-width: 1080px) {
+ @media screen and (max-width: 375px) {
 
-  .reouverture-content{
+  body {
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+
+  /* HEADER */
+  header {
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+  }
+
+  nav ul {
     flex-direction: column;
     gap: 10px;
   }
 
-  .coup_de_coeur{
-    flex-direction: column;
-    gap: 10px;
-    padding-top: 30px;
+  .btn-alt {
+    position: static;
+    margin-top: 10px;
   }
 
-  .musée{
-    flex-direction: column;
-    gap: 10px;
+  .madd-logo {
+    height: 32px;
   }
 
-  .oeuvre_coup_de_coeur .coup_de_coeur {
-    flex-direction: column;
+  /* TITRE + INTRO */
+  .MuséeVivant {
+    margin-right: 0;
+    padding-top: 25px;
+    text-align: center;
   }
 
-  .oeuvre_coup_de_coeur img {
+  .MuséeVivant h1 {
+    margin-left: 0;
+    font-size: 1.5rem;
+  }
+
+    .MuséeVivant h2 {
+    margin-left: 0;
+    font-size: 1.2rem;
+    text-align: center;
+    padding-right: 110px;
+  }
+
+
+  .MuséeVivant img {
+    margin-left: 0;
     max-width: 100%;
   }
 
-  .texte{
-    padding-top: 0;
+  /* IMAGES */
+  .Image {
+    flex-direction: column;
+    height: auto;
+    gap: 12px;
+    padding: 15px 0;
   }
-}
+
+  /* TEXTE */
+  .texte-expo {
+    text-align: left;
+    font-size: 0.95rem;
+  }
+
+  .contact-expo {
+    padding-left: 20px;
+  }
+
+  /* FOOTER */
+  footer {
+    flex-direction: column;
+    gap: 30px;
+    padding-top: 60px;
+    font-size: 16px;
+  }
+
+  .info2-footer {
+    grid-template-columns: 1fr;
+  }
+
+  .image-reseau {
+    
+    padding-top: 10px;
+    width: 50px
+  
+  }
+    
+  }

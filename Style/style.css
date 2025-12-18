@@ -44,7 +44,8 @@ nav a, nav a:visited, nav a:hover, nav a:active {
 /*heder*/
 /*body*/
 main {
-  padding: 3rem 2rem;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 /* cacher les radios */
 .expo-slider input {
@@ -77,7 +78,13 @@ main {
 .titre{
  padding-left: 150px;
  padding-top: 100px;
- padding-bottom: 50px
+ padding-bottom: 50px;
+}
+
+.titre-alt{
+ padding-left: 150px;
+ padding-top: 100px;
+ padding-bottom: 50px;
 }
 
 .texte {
@@ -87,6 +94,15 @@ main {
   padding-top: 100px;
   padding-left: 150px;
   width: 700px;
+}
+
+.texte-alt{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding-top: 10px;
+  margin-left: 150px;
+  width: 1250px;
 }
 
 .oeuvre_coup_de_coeur p {
@@ -102,7 +118,7 @@ main {
 
 .histoire .musée {
   display: flex;
-  gap: 15px;
+  gap: 0px;
   align-items: flex-start;
 }
 
@@ -111,6 +127,7 @@ main {
   height: auto;
   object-fit: contain;
   display: block;
+  padding-left: 100px;
 }
 
 .btn-alt {
@@ -165,7 +182,7 @@ footer ol {
   .reouverture-content{
     flex-direction: column;
     gap: 10px;
-    padding-right : 1rem;
+    padding-right : 3rem;
   }
 
   .coup_de_coeur{
@@ -197,11 +214,25 @@ footer ol {
   .texte{
     padding-top: 0;
     text-align: center;
-    padding-left: 1rem;
+    padding-left: 10px;
     width: 300px;
   }
 
+  .texte-alt{
+  padding-top: 20px;
+  font-size: 16px;
+  margin-left: 15px;
+  margin-right: 15px;
+  width: 290px;
+  }
+
   .titre{
+    padding-left: 0rem;
+    width: 320px;
+    text-align: center;
+  }
+
+  .titre-alt{
     padding-left: 0rem;
     width: 320px;
     text-align: center;
@@ -216,30 +247,40 @@ footer ol {
     padding-left: 2.5rem;
     width: 300px;
   }
-
-  .info-footer{
+  footer {
     flex-direction: column;
-    gap:10px;
-    padding-left: 20px;
+    gap: 30px;
+    padding-top: 60px;
+    padding-left: 10px;
+    font-size: 16px;
   }
 
-  footer{
-    flex-direction: column;
-    gap: 0px;
-    padding-left: 20px;
-    width: 350px;
+  .info2-footer {
+    grid-template-columns: 1fr;
+    padding-left: 100px;
+    text-align: center;
+    gap: 20px;
   }
 
-  .info2-footer{
-    flex-direction: column;
-    gap: 10px;
+  .info-footer {
+    grid-template-columns: 1fr;
     padding-left: 0px;
-    width: 350px;
-    padding-top: 20px;
-    padding-right: 20px;
+    text-align: center;
   }
 
-  .btn-alt{
-    margin-top: 3rem;
+  .image-reseau {
+    
+    padding-top: 10px;
+    width: 50px
+  
   }
+  .btn-alt{
+    margin-right: 20px;
+  }
+
+  .quotes{
+    padding-left: 0px;
+  }
+  
+
 }
