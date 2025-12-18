@@ -175,13 +175,12 @@ footer ol {
     flex-direction: column;
     gap: 10px;
     padding-top: 30px;
-    padding-left: rem;
   }
 
   .musée{
     flex-direction: column;
     gap: 10px;
-    
+
   }
 
   .oeuvre_coup_de_coeur .coup_de_coeur {
