@@ -182,10 +182,21 @@ footer ol {
 /*footer*/
 
 
-@media screen and (max-widht: 1080px) {
+@media screen and (max-width: 1080px) {
 
   .reouverture-content{
-      flex-direction: column;
-      gap: 10px;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .coup_de_coeur{
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .musée{
+    flex-direction: column;
+    gap: 10px;
+  }
   }
 }
