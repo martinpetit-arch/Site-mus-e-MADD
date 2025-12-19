@@ -103,7 +103,7 @@ main {
   display: flex;
   flex-direction: column;
   gap: 10px;
-  padding-top: 100px;
+  padding-top: 30px;
   padding-left: 150px;
   width: 700px;
 }
@@ -135,11 +135,11 @@ main {
 }
 
 .image{
-  width: 800px;
+  width: 600px;
   height: auto;
   object-fit: contain;
   display: block;
-  padding-left: 100px;
+  padding-left: 210px;
 }
 
 .btn-alt {
