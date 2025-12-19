@@ -30,7 +30,7 @@
 
 /* Effet au survol */
 .expo-item:hover .img-wrapper img {
-  transform: scale(1); /* zoom dans l'image */
+  transform: scale(1.1); /* zoom dans l'image */
 }
 
 .expo-item figcaption {
