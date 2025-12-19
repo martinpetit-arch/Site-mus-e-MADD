@@ -107,14 +107,17 @@ header nav .toggle {
   }
 
   /* Bouton hamburger abaissé */
-  header nav .toggle {
-    display: block;          /* Visible en mobile */
-    right: 1rem;             /* Aligné à droite */
-    color: orange;           /* Icône orange */
-    font-size: 2rem;         /* Taille icône */
-    cursor: pointer;         /* Curseur main */
-    z-index: 3000;           /* Passe au-dessus du menu */
-  }
+header nav .toggle {
+  display: block;
+  position: absolute; /* ou fixed si tu veux qu’il reste toujours visible */
+  top: 1rem;
+  right: 1rem;
+  color: orange;
+  font-size: 2rem;
+  cursor: pointer;
+  z-index: 3000;
+}
+
 
   /* Sous-menu en mobile */
   header nav ul li ul {
