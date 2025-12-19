@@ -105,69 +105,70 @@ header nav ul li:hover ul.submenu {
 /* ===== RESPONSIVE ===== */
 @media screen and (max-width: 1080px) {
   header nav ul {
-    display: none;       /* Caché par défaut en mobile */
-    flex-direction: column; /* Menu vertical */
-    justify-content: center;   /* Centre verticalement les liens */
-    align-items: center;       /* Centre horizontalement les liens */
-    background: #ffffff;       /* Fond blanc */
-    position: fixed;           /* Fixé sur toute la page */
-    top: 0;                    /* Commence en haut */
-    left: 0;                   /* Collé à gauche */
-    height: 100vh;             /* Prend toute la hauteur de l’écran */
-    width: 100vw;              /* Prend toute la largeur de l’écran */
-    margin: 0;                 /* Supprime marges */
-    padding: 0;                /* Supprime padding */
-    z-index: 1500;             /* Passe au-dessus du contenu */
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;   /* Aligne à gauche */
+    background: #ffffff;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    padding: 2rem 1rem;        /* Un peu d’espace interne */
+    z-index: 1500;
   }
 
   header nav ul.active {
-    display: flex;             /* Affiche le menu quand on ajoute la classe active via JS */
+    display: flex;
   }
 
   header nav ul li {
-    width: 100%;               /* Chaque item prend toute la largeur */
-    text-align: center;        /* Texte centré */
+    width: 100%;
+    text-align: left;          /* Texte aligné à gauche */
   }
 
   header nav ul li a {
-    color: #fff;               /* Liens blancs */
-    padding: 1.5rem;           /* Espacement interne plus grand */
-    display: block;            /* Chaque lien prend toute la largeur */
-    font-size: 1.2rem;         /* Taille du texte plus grande */
+    color: #000;               /* Texte noir pour contraste */
+    padding: 1rem;
+    display: block;
+    font-size: 1.1rem;
   }
 
   header nav ul li a:hover {
-    background: rgb(255, 255, 255); /* Fond blanc au survol */
-    color: #000000;                 /* Texte noir au survol */
+    background: orange;
+    color: #fff;
   }
 
-  /* Bouton hamburger abaissé */
-header nav .toggle {
-  display: block;
-  position: absolute; /* ou fixed si tu veux qu’il reste toujours visible */
-  top: 1rem;
-  right: 1rem;
-  color: orange;
-  font-size: 2rem;
-  cursor: pointer;
-  z-index: 3000;
-}
-
-
-  /* Sous-menu en mobile */
-  header nav ul li ul {
-    position: static;        /* Intégré dans le flux (pas en absolu) */
-    background: #ffffff;     /* Fond blanc */
-    border: none;            /* Pas de bordure */
-    width: 100%;             /* Prend toute la largeur */
+  /* Bouton hamburger */
+  header nav .toggle {
+    display: block;
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    color: orange;
+    font-size: 2rem;
+    cursor: pointer;
+    z-index: 3000;
   }
 
-  header nav ul li ul li a {
-    color: #fff;             /* Liens blancs */
+  /* Sous-menu en mobile : toujours visible */
+  header nav ul li ul.submenu {
+    display: block;            /* Toujours affiché */
+    position: static;          /* Dans le flux normal */
+    background: transparent;   /* Pas de fond séparé */
+    border: none;
+    box-shadow: none;
+    padding-left: 1rem;        /* Décalage visuel */
   }
 
-  header nav ul li ul li a:hover {
-    background: orange;      /* Fond orange au survol */
-    color: #000;             /* Texte noir au survol */
+  header nav ul li ul.submenu li a {
+    color: #000;
+    font-size: 1rem;
+    padding: 0.8rem 1rem;
+  }
+
+  header nav ul li ul.submenu li a:hover {
+    background: orange;
+    color: #fff;
   }
 }
