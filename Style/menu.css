@@ -108,7 +108,6 @@ header nav .toggle {
 
   /* Bouton hamburger abaissé */
   header nav .toggle {
-    position: relative;   /* OBLIGATOIRE */
     display: block;          /* Visible en mobile */
     right: 1rem;             /* Aligné à droite */
     color: orange;           /* Icône orange */
