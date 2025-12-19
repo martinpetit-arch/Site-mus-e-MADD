@@ -30,6 +30,7 @@ header {
   height: 40px;
   width: auto;
   display: block;
+  padding-left: 120px;
 }
 nav ul {
   display: flex;
