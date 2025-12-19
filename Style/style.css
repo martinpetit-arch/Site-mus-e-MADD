@@ -202,7 +202,6 @@ footer ul {
     padding-left: 50px;
   }
   .reouverture{
-    padding-left: 20px;
   }
   
   body{
@@ -212,7 +211,9 @@ footer ul {
   .reouverture-content{
     flex-direction: column;
     gap: 10px;
-    padding-right : 3rem;
+    padding-right : 1.5rem;
+    padding-left: 1.5rem;
+
   }
 
   .coup_de_coeur{
@@ -270,7 +271,7 @@ footer ul {
   }
 
   .titre{
-    padding-left: 30px;
+    padding-left: 2rem;
     width: 320px;
     text-align: center;
   }
