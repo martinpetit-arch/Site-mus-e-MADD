@@ -43,7 +43,7 @@
 }
 
 .expo-item:hover figcaption {
-  color: #d62828; /* texte change de couleur */
+  color: orange; /* texte change de couleur */
 }
 
 /* Mobile/tablette */
