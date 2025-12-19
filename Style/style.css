@@ -107,6 +107,7 @@ main {
   padding-top: 30px;
   padding-left: 150px;
   width: 700px;
+  text-align: left;
 }
 
 .texte-alt{
@@ -115,7 +116,7 @@ main {
   gap: 10px;
   padding-top: 10px;
   margin-left: 150px;
-  width: 1250px;
+  max-width: 60ch;
 }
 
 .oeuvre_coup_de_coeur p {
@@ -200,11 +201,15 @@ footer ul {
 @media screen and (max-width: 677px) {
 
   .body{
-    padding-left: 50px;
-  }
-  .reouverture{
+    padding-left: 33px;
   }
   
+  .madd-logo {
+    height: 32px;
+    padding-left: 0px;
+    padding-right: 10px;
+  }
+
   body{
     padding-right: 0.7rem;
   }
@@ -258,7 +263,8 @@ footer ul {
   .texte{
     padding-top: 0;
     text-align: left;
-    padding-left: 20px;
+    padding-left: 10px;
+    padding-top: 20px;
     width: 300px;
   }
 

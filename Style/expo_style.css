@@ -51,6 +51,12 @@ nav a, nav a:visited, nav a:hover, nav a:active {
 }
 /*header*/
 
+.titre-expo{
+  text-align: left;
+  max-width: 60ch;
+  padding-left: 360px;
+  padding-right: 200px;
+}
 
 .MuséeVivant {
   text-align: center;
@@ -89,13 +95,20 @@ body {
 }  
 
 
-
-
-
 .texte-expo{
   text-align: left;
   padding-right: 0px;
-  padding-left: 0px;
+  padding-left: 360px;
+  max-width: 60ch;
+  
+}
+
+.contact-expo{
+  padding-top: 50px;
+  text-align: left;
+  padding-right: 0px;
+  padding-left: 360px;
+  max-width: 60ch;
   
 }
 
@@ -159,6 +172,8 @@ footer ol {
 
   .madd-logo {
     height: 32px;
+    padding-left: 0px;
+    padding-right: 10px;
   }
 
   /* TITRE + INTRO */
@@ -223,4 +238,29 @@ footer ol {
   
   }
     
+
+.texte-expo{
+  text-align: left;
+  padding-right: 0px;
+  padding-left: 0;
+  max-width: 60ch;
+  
+}
+
+.contact-expo{
+  padding-top: 50px;
+  text-align: left;
+  padding-right: 0px;
+  padding-left: 20px;
+  max-width: 60ch;
+  
+}
+
+.titre-expo{
+  text-align: left;
+  padding-left: 10px;
+    padding-right: 0px;
+  width: 450px;
+}
+
   }
