@@ -228,6 +228,10 @@ footer ul {
     top: -5rem;
   }
 
+  .coup_de_coeur img, .coup_de_coeur h3{
+    padding-left: 60px;
+  }
+
   .musée{
     flex-direction: column;
     gap: 5px;
@@ -246,7 +250,7 @@ footer ul {
   .texte{
     padding-top: 0;
     text-align: left;
-    padding-left: 10px;
+    padding-left: 20px;
     width: 300px;
   }
 
@@ -259,7 +263,7 @@ footer ul {
   }
 
   .titre{
-    padding-left: 0rem;
+    padding-left: 30px;
     width: 320px;
     text-align: center;
   }
